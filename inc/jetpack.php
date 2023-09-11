@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package ubcani
+ * @package OnigiriWP
  */
 
 /**
@@ -14,13 +14,13 @@
  * See: https://jetpack.com/support/responsive-videos/
  * See: https://jetpack.com/support/content-options/
  */
-function ubcani_jetpack_setup() {
+function onigiriwp_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support(
 		'infinite-scroll',
 		array(
 			'container' => 'main',
-			'render'    => 'ubcani_infinite_scroll_render',
+			'render'    => 'onigiriwp_infinite_scroll_render',
 			'footer'    => 'page',
 		)
 	);
@@ -33,7 +33,7 @@ function ubcani_jetpack_setup() {
 		'jetpack-content-options',
 		array(
 			'post-details' => array(
-				'stylesheet' => 'ubcani-style',
+				'stylesheet' => 'onigiriwp-style',
 				'date'       => '.posted-on',
 				'categories' => '.cat-links',
 				'tags'       => '.tags-links',
@@ -48,13 +48,13 @@ function ubcani_jetpack_setup() {
 		)
 	);
 }
-add_action( 'after_setup_theme', 'ubcani_jetpack_setup' );
+add_action( 'after_setup_theme', 'onigiriwp_jetpack_setup' );
 
-if ( ! function_exists( 'ubcani_infinite_scroll_render' ) ) :
+if ( ! function_exists( 'onigiriwp_infinite_scroll_render' ) ) :
 	/**
 	 * Custom render function for Infinite Scroll.
 	 */
-	function ubcani_infinite_scroll_render() {
+	function onigiriwp_infinite_scroll_render() {
 		while ( have_posts() ) {
 			the_post();
 			if ( is_search() ) :

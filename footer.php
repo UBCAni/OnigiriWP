@@ -6,23 +6,23 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package ubcani
+ * @package OnigiriWP
  */
 
 ?>
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'ubcani' ) ); ?>">
+			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'onigiriwp' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'ubcani' ), 'WordPress' );
+				printf( esc_html__( 'Proudly powered by %s', 'onigiriwp' ), 'WordPress' );
 				?>
 			</a>
 			<span class="sep"> | </span>
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'ubcani' ), 'ubcani', '<a href="http://underscores.me/">poff</a>' );
+				printf( esc_html__( 'Theme: %1$s by %2$s.', 'onigiriwp' ), 'onigiriwp', '<a href="http://underscores.me/">poff</a>' );
 				?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

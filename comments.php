@@ -7,7 +7,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package ubcani
+ * @package OnigiriWP
  */
 
 /*
@@ -28,18 +28,18 @@ if ( post_password_required() ) {
 		?>
 		<h2 class="comments-title">
 			<?php
-			$ubcani_comment_count = get_comments_number();
-			if ( '1' === $ubcani_comment_count ) {
+			$onigiriwp_comment_count = get_comments_number();
+			if ( '1' === $onigiriwp_comment_count ) {
 				printf(
 					/* translators: 1: title. */
-					esc_html__( 'One thought on &ldquo;%1$s&rdquo;', 'ubcani' ),
+					esc_html__( 'One thought on &ldquo;%1$s&rdquo;', 'onigiriwp' ),
 					'<span>' . wp_kses_post( get_the_title() ) . '</span>'
 				);
 			} else {
 				printf( 
 					/* translators: 1: comment count number, 2: title. */
-					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $ubcani_comment_count, 'comments title', 'ubcani' ) ),
-					number_format_i18n( $ubcani_comment_count ), // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $onigiriwp_comment_count, 'comments title', 'onigiriwp' ) ),
+					number_format_i18n( $onigiriwp_comment_count ), // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 					'<span>' . wp_kses_post( get_the_title() ) . '</span>'
 				);
 			}
@@ -65,7 +65,7 @@ if ( post_password_required() ) {
 		// If comments are closed and there are comments, let's leave a little note, shall we?
 		if ( ! comments_open() ) :
 			?>
-			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'ubcani' ); ?></p>
+			<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'onigiriwp' ); ?></p>
 			<?php
 		endif;
 

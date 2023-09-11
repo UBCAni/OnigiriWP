@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package ubcani
+ * @package OnigiriWP
  */
 
 get_header();
